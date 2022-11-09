@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Controllers.UserController.FetchUserDetails(WebApi.User)">
+            <summary>
+            This is to Fetch details
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.AddUserDetails(WebApi.User)">
+            <summary>
+            This is to add details
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.UpdateUserDetails(WebApi.User)">
+            <summary>
+            This is to update details
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.RemoveEmployeeDetails(WebApi.User)">
+            <summary>
+            This is to remove details
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
