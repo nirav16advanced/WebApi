@@ -4,6 +4,44 @@
         <name>WebApi</name>
     </assembly>
     <members>
+        <member name="T:WebApi.Controllers.StudentsController">
+            <summary>
+            Implementing WebAPI using on DB 
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.StudentsController.#ctor(WebApi.DBModels.WebapiContext)">
+            <summary>
+            DB context object for Request and Response
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:WebApi.Controllers.StudentsController.GetAllStudents">
+            <summary>
+            Get all students  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.StudentsController.CreateStudent(WebApi.RequestModel.StudentCreateRequest)">
+            <summary>
+            Create students details
+            </summary>
+            <param name="studentCreateRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.StudentsController.StudentUpdateRequest(WebApi.ResponseModel.StudentDTO)">
+            <summary>
+            Student Update details
+            </summary>
+            <param name="studentDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.StudentsController.RemoveStudentDetails(System.Int32)">
+            <summary>
+            Student delete details
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Controllers.UserController.FetchUserDetails(WebApi.User)">
             <summary>
             This is to Fetch details

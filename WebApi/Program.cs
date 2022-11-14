@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using WebApi.DBModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +35,9 @@ builder.Services.AddSwaggerGen(options =>
     var xmlFilename = $"employee.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
+
+builder.Services.AddDbContext<WebapiContext>(options =>
+    options.UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=webapi;Trusted_Connection=True"));
 
 var app = builder.Build();
 
