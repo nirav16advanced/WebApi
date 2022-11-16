@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "6f7f70d0-4165-4a67-b4fd-40a29d5ed0a7",
+		"name": "Webapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "All Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7085/students/api",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7085",
+							"path": [
+								"students",
+								"api"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"studentname\": \"Nirav\",\r\n  \"mobilenumber\": \"7\",\r\n  \"companyname\": \"Advance\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7085/students/api/create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7085",
+							"path": [
+								"students",
+								"api",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7085/students/api/update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7085",
+							"path": [
+								"students",
+								"api",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete students",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7085/students/api/delete/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7085",
+							"path": [
+								"students",
+								"api",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
